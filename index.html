@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bite Cafe — Онлайн-кафе</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">🍔 Bite<span>Cafe</span></a>
+    <nav>
+      <a href="#menu">Меню</a>
+      <a href="#about">Про нас</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a href="#cart" class="cart-link">🛒 Кошик <b id="cart-count">0</b></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">СМАЧНО. ШВИДКО. ЗРУЧНО.</p>
+        <h1>Твоя улюблена їжа — <span>тут!</span></h1>
+        <p>Соковиті бургери, гаряча піца та напої.
+           Обирай улюблене й замовляй онлайн.</p>
+        <a class="main-btn" href="#menu">Переглянути меню ↓</a>
+      </div>
+      <div class="hero-image">🍔🍟🥤</div>
+    </section>
+
+    <section id="menu" class="section">
+      <p class="tag">ЩО СЬОГОДНІ СМАКУЄМО?</p>
+      <h2>Наше меню</h2>
+      <div class="filters">
+        <button class="filter active" data-category="all">Усе</button>
+        <button class="filter" data-category="burger">Бургери</button>
+        <button class="filter" data-category="pizza">Піца</button>
+        <button class="filter" data-category="drink">Напої</button>
+        <button class="filter" data-category="dessert">Десерти</button>
+      </div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <section id="cart" class="section cart-section">
+      <p class="tag">ТВОЄ ЗАМОВЛЕННЯ</p>
+      <h2>Кошик 🛒</h2>
+      <div id="cart-items">Кошик поки порожній</div>
+      <div class="total">Разом: <span id="total">0</span> грн</div>
+
+      <form id="order-form">
+        <input id="customer-name" placeholder="Твоє ім'я" required>
+        <input id="customer-phone" type="tel"
+          placeholder="Номер телефону" required>
+        <input id="customer-address" placeholder="Адреса доставки" required>
+        <button class="main-btn" type="submit">Оформити замовлення</button>
+      </form>
+      <p id="order-message"></p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Чому Bite Cafe?</h2>
+      <p>❤️ Готуємо з любов'ю</p>
+      <p>🔥 Смачно та ситно</p>
+      <p>⚡ Проста система онлайн-замовлень</p>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <h2>🍔 BiteCafe</h2>
+    <p>Смачна їжа — гарний настрій!</p>
+    <p>Демо-сайт кафе © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
